@@ -1,31 +1,110 @@
+/* * body { */
+    /* margin:0px; */
+    /* width: auto; */
+    /* background-color: silver; */
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif */
+/* } */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin:0px;
+    padding: 0;
+    margin: 0%;
 }
 
-.header {
-    background-color: grey;
-    float: left;
-     
-}
-
-.container-nav {
-    display: flex;
-    background-color: grey;
-    width: 100%;
-    height: 150px;
-    
-}
-
-
-.navitem {
-    width: 150px;
+.navbar {
     height: 100px;
-    border-style: solid;
-    border-width: 2px;
-    background-color: silver;
-    float: right;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    color: white;
 }
+
+.web-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0; 
+    display: flex;
+
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: silver;
+}
+
+.menu-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+}
+
+.menu-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* header { */
+    /* display: flex; */
+    /* background-color: grey; */
+    /* width: 100%; */
+    /* height: 100px; */
+    /* display: flex; */
+    /* justify-content:right; */
+     /*  */
+/* } */
+
+/* .container-nav { */
+    /* display: flex; */
+    /* background-color: grey; */
+    /* width: 100%; */
+    /* height: 150px; */
+    /* display: flex; */
+    /* justify-content:right; */
+/* } */
+
+/* .container-nav { */
+    /* float: right; */
+
+/* } */
+
+/* .container-nav h1 { */
+
+/* } */
+
+/* .navitem { */
+    /* width: 150px; */
+    /* height: 100px; */
+    /* border-style: solid; */
+    /* border-width: 2px; */
+    /* background-color: silver; */
+    /* float: right; */
+ 
+/* } */
 
 
 .flexbox-photobreak1 {
@@ -40,6 +119,10 @@ body {
     flex-direction: column;
 }
 
+section {
+    margin: 20px;
+}
+
 .about-me {
     display: flex;
 }
@@ -48,9 +131,17 @@ body {
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
+.about-me p {
+    line-height: 30px;
+}
 
 .my-work {
     display: flex;
+    justify-content: space-between;
+}
+
+.my-work-container {
+    justify-content: space-between;
 }
 
 .my-work h1 {
@@ -58,13 +149,49 @@ body {
     text-orientation: mixed;
 }
 
-.contact-me {
+
+.work-tile {
     display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: grey;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+
+.work-tile:hover {
+    background-color: silver;
+    border-color: orange;
+    width: 350px;
+}
+
+.work-tile-text {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contact-me {
+    display: flex; 
+    ;
 }
 
 .contact-me h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
+}
+
+.contact-me-tile {
+    height: 100px;
+    width: 300px;
+    background-color: grey;
+    border-style: solid;
+    border-width: 3px;
 }
 
 .resume {
@@ -76,3 +203,34 @@ body {
     text-orientation: mixed;
 }
 
+@media (max-width:550px) {
+    .menu-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar {
+        height: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}

@@ -10,18 +10,34 @@
 </head>
 
 <body>
-
-    <Head>
-        <div class="container-nav">
-            <div>
-                <h1>Noah Thayne</h1>
-            </div>
-            <a class="navitem">About Me</a>
-            <a class="navitem">My Work</a>
-            <a class="navitem">Contact Me</a>
-            <a class="navitem">Resume</a>
+    <nav class="navbar">
+        <div class="web-title">Noah Thayne</div>
+        <a href="#" class="menu-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#myWork">My Work</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
         </div>
-    </Head>
+    </nav>
+
+    <!-- <header> -->
+        <!-- <div> -->
+            <!-- <h1>Noah Thayne</h1> -->
+        <!-- </div> -->
+        <!-- <div class="container-nav"> -->
+            <!-- <a href="#aboutMe" class="navitem">About Me</a> -->
+            <!-- <a href="#myWork" class="navitem">My Work</a> -->
+            <!-- <a href="#contactMe" class="navitem">Contact Me</a> -->
+            <!-- <a href="#resume" class="navitem">Resume</a> -->
+        <!-- </div> -->
+    <!-- </header> -->
 
     <div class="flexbox-photobreak1">
         <img src="https://via.placeholder.com/800x400">
@@ -31,40 +47,67 @@
         </div>
     </div>
 
-    <section>
+    <section id="aboutMe">
         <div class=container">
             <div class="about-me">
                 <h1>About Me</h1>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam laborum debitis
+                <p> My name is Noah Thayne. I come from planet earth and my family has been living in the Utah region of the United States for the last 200 years or so. I am in my mid 20's and have made a switch in careers from manual labor to the technology word. I am currently learning the tools of web devlopment and will start my coding career in that area. Eventually I will want to Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam laborum debitis
                     voluptatem exercitationem nam dicta autem at nemo, qui rem vero facere laudantium quod error atque
                     minus voluptates obcaecati!</p>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class=container">
+    <section id="myWork">
+        <div class="my-work-container">
             <div class="my-work">
                 <h1>My Work</h1>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam laborum debitis
-                    voluptatem exercitationem nam dicta autem at nemo, qui rem vero facere laudantium quod error atque
-                    minus voluptates obcaecati!</p>
+                <div class="work-tile">
+                    <!-- <img src="https://via.placeholder.com/200x200"> -->
+                    <div class="work-tile-text">
+                        <h3>Project 1</h3>
+                    </div>
+                </div>
+                <div class="work-tile">
+                    <div class="work-tile-text">
+                        <h3>Project 2</h3>
+                    </div>
+                </div>
+                <div class="work-tile">
+                    <div class="work-tile-text">
+                        <h3>Project 3</h3>
+                    </div>
+                </div>
+                <div class="work-tile">
+                    <div class="work-tile-text">
+                        <h3>Project 4</h3>
+                    </div>
+                </div>
+                <div class="work-tile">
+                    <div class="work-tile-text">
+                        <h3>Project 5</h3>
+                    </div>
+                </div>
+        
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="contactMe">
         <div class=container">
             <div class="contact-me">
                 <h1>Contact Me</h1>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam laborum debitis
-                    voluptatem exercitationem nam dicta autem at nemo, qui rem vero facere laudantium quod error atque
-                    minus voluptates obcaecati!</p>
+
+                <div class="contact-me-tile">Linkedin</div>
+                <div class="contact-me-tile">Email</div>
+                <div class="contact-me-tile">Twitter</div>
+                <div class="contact-me-tile">Phone #</div>
+
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="resume">
         <div class=container">
             <div class="resume">
                 <h1>Resume</h1>
@@ -75,5 +118,6 @@
         </div>
     </section>
 </body>
+<script src="script.js"></script>
 
 </html>
