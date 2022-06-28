@@ -109,7 +109,7 @@ body {
 
 .flexbox-photobreak1 {
     display: flex;
-    max-width: 100%;
+    max-width: auto;
     height: auto;
     width: auto\9; /* ie8 */
     /* flex-direction: column; */
@@ -141,6 +141,7 @@ section {
 }
 
 .my-work-container {
+    display: block;
     justify-content: space-between;
 }
 
@@ -192,6 +193,7 @@ section {
     background-color: grey;
     border-style: solid;
     border-width: 3px;
+    display: block;
 }
 
 .resume {
@@ -201,6 +203,10 @@ section {
 .resume h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
+}
+
+.pdf-display {
+    justify-content: space-between;
 }
 
 @media (max-width:550px) {
@@ -232,5 +238,8 @@ section {
     }
     .navbar-links.active{
         display: flex;
+    }
+    .flexbox-photobreak1 {
+        width: auto;
     }
 }
