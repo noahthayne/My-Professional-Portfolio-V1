@@ -236,10 +236,10 @@ section {
     .navbar-links li a {
         padding: .5rem 1rem;
     }
-    .navbar-links.active{
+    .navbar-links.active {
         display: flex;
     }
     .flexbox-photobreak1 {
-        width: auto;
+        max-width: 550px;
     }
 }
